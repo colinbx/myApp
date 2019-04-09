@@ -7,7 +7,17 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          {/* <img src={logo} className="App-logo" alt="logo" /> */}
+
+          {/* <img className="shipImage" src='img/test1.jpg' />
+                <img className="shipImage" src={require('./img/test2.jpg')} />
+                <img className="shipImage" src={require('./img/test3.jpg')} />
+                <img className="shipImage" src={require('./img/test4.jpg')} />
+                <img className="shipImage" src={require('./img/test5.jpg')} />
+                <img className="shipImage" src={require('./img/test6.jpg')} />
+                <img className="shipImage" src={require('./img/test7.jpg')} /> */}
+
+                <img className="shipImage" src={require('./img/test1.jpg')} />
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
