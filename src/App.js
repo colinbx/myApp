@@ -18,6 +18,7 @@ class App extends Component {
                 <img className="shipImage" src={require('./img/test7.jpg')} /> */}
 
                 <img className="shipImage" src={require('./img/test1.jpg')} />
+                <img className="shipImage" src='img/test2.jpg' />
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
