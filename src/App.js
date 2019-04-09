@@ -28,6 +28,7 @@ class App extends Component {
                 <img className="shipImage" src='img/test9.jpg' />
                 <img className="shipImage" src='img/test10.jpg' />
                 <img className="shipImage" src='img/test11.jpg' />
+                <img className="shipImage" src='img/1.webp' />
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
