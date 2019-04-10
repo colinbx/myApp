@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-                <img className="shipImage" src='img/test1.jpg' />
+                {/* <img className="shipImage" src='img/test1.jpg' />
                 <img className="shipImage" src='img/test2.jpg' />
                 <img className="shipImage" src='img/test3.jpg' />
                 <img className="shipImage" src='img/test4.jpg' />
@@ -48,7 +48,7 @@ class App extends Component {
                 <img className="shipImage" src='img/test38.jpg' />
                 <img className="shipImage" src='img/test39.jpg' />
                 <img className="shipImage" src='img/test40.jpg' />
-                <img className="shipImage" src='img/test41.jpg' />
+                <img className="shipImage" src='img/test41.jpg' /> */}
                 {ie && <><img className="shipImage" src='images/test1.jxr' />
                 <img className="shipImage" src='images/test2.jxr' />
                 <img className="shipImage" src='images/test3.jxr' />
@@ -90,7 +90,7 @@ class App extends Component {
                 <img className="shipImage" src='images/test39.jxr' />
                 <img className="shipImage" src='images/test40.jxr' />
                 <img className="shipImage" src='images/test41.jxr' /></> }
-              {/* {!ie && <><img className="shipImage" src='images/test1.webp' />
+              {!ie && <><img className="shipImage" src='images/test1.webp' />
                 <img className="shipImage" src='images/test2.webp' />
                 <img className="shipImage" src='images/test3.webp' />
                 <img className="shipImage" src='images/test4.webp' />
@@ -130,7 +130,7 @@ class App extends Component {
                 <img className="shipImage" src='images/test38.webp' />
                 <img className="shipImage" src='images/test39.webp' />
                 <img className="shipImage" src='images/test40.webp' />
-                <img className="shipImage" src='images/test41.webp' /></> } */}
+                <img className="shipImage" src='images/test41.webp' /></> }
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
