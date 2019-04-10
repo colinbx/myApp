@@ -49,7 +49,7 @@ class App extends Component {
                 <img className="shipImage" src='img/test39.jpg' />
                 <img className="shipImage" src='img/test40.jpg' />
                 <img className="shipImage" src='img/test41.jpg' />
-                {ie && <><img className="shipImage" src='images/test1.jxr' />
+                {!ie && <><img className="shipImage" src='images/test1.jxr' />
                 <img className="shipImage" src='images/test2.jxr' />
                 <img className="shipImage" src='images/test3.jxr' />
                 <img className="shipImage" src='images/test4.jxr' />
