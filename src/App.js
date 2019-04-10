@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-                {/* <img className="shipImage" src='img/test1.jpg' />
+                <img className="shipImage" src='img/test1.jpg' />
                 <img className="shipImage" src='img/test2.jpg' />
                 <img className="shipImage" src='img/test3.jpg' />
                 <img className="shipImage" src='img/test4.jpg' />
@@ -48,7 +48,7 @@ class App extends Component {
                 <img className="shipImage" src='img/test38.jpg' />
                 <img className="shipImage" src='img/test39.jpg' />
                 <img className="shipImage" src='img/test40.jpg' />
-                <img className="shipImage" src='img/test41.jpg' /> */}
+                <img className="shipImage" src='img/test41.jpg' />
                 {ie && <><img className="shipImage" src='images/test1.jxr' />
                 <img className="shipImage" src='images/test2.jxr' />
                 <img className="shipImage" src='images/test3.jxr' />
