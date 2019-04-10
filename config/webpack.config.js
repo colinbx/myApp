@@ -475,31 +475,33 @@ module.exports = function(webpackEnv) {
       new CopyWebpackPlugin([{
         from: "./src/img/*.jpg",
         to: "./images/[name].webp"
-      }, {
+      }
+      // , {
+      //   from: "./src/img/*.jpg",
+      //   to: "./images/[name].jxr"
+      // }
+    ]),
+      new ImageminWebpackPlugin({
+        plugins: [
+          ImageminWebP({
+            quality: 75
+          })
+          // , imageminJpegRecompress({
+          //   quality: 75
+          // })
+        ]
+      }),
+      new CopyWebpackPlugin([{
         from: "./src/img/*.jpg",
         to: "./images/[name].jxr"
       }]),
       new ImageminWebpackPlugin({
         plugins: [
-          ImageminWebP({
-            quality: 75
-          }),
           imageminJpegRecompress({
             quality: 75
           })
         ]
       }),
-      // new CopyWebpackPlugin([{
-      //   from: "./src/img/*.jpg",
-      //   to: "./images/[name].jxr"
-      // }]),
-      // new ImageminWebpackPlugin({
-      //   plugins: [
-      //     imageminJpegRecompress({
-      //       quality: 75
-      //     })
-      //   ]
-      // }),
       // Generates an `index.html` file with the <script> injected.
       new HtmlWebpackPlugin(
         Object.assign(
