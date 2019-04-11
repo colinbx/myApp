@@ -1,13 +1,25 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import {Image, Video, Transformation, CloudinaryContext} from 'cloudinary-react';
 
 class App extends Component {
   render() {
     const ie = /*@cc_on!@*/false || !!document.documentMode;
+    const style = {width: 'calc(33.33% - 137.33333px)', height: '100px', overflow: 'hidden'}
+    const style1 = {width: '100%', height: '100%', backgroundImage: "url(https://res.cloudinary.com/demo/image/upload/f_auto/seagull.jpg)", backgroundSize: "cover"}
+    const style2 = {width: '100%', height: '100%', backgroundImage: "url(img/1qa.svg)", backgroundSize: "cover"}
+    const style3 = {width: '100%', height: '100%'}
     return (
       <div className="App">
         <header className="App-header">
+        {/* <Image cloudName="dialqb1om" publicId="img/test1.jpg" crop="scale" /> */}
+        {/* <img src="https://res.cloudinary.com/demo/image/upload/f_auto/seagull.jpg" /> */}
+        <div style={style}>
+          <Image responsive dpr="auto" width="auto" crop="scale" cloudName="dialqb1om" publicId="1qa.jpg" style={style3} />
+        {/* <Image responsive angle="20" dpr="auto" width="auto" crop="scale" cloudName="dialqb1om" publicId="sample.jpg" style={style1} /> */}
+        {/* <div style={style2} /> */}
+        </div>
                 {/* <img className="shipImage" src='img/test1.jpg' />
                 <img className="shipImage" src='img/test2.jpg' />
                 <img className="shipImage" src='img/test3.jpg' />
@@ -49,7 +61,7 @@ class App extends Component {
                 <img className="shipImage" src='img/test39.jpg' />
                 <img className="shipImage" src='img/test40.jpg' />
                 <img className="shipImage" src='img/test41.jpg' /> */}
-                {ie && <><img className="shipImage" src='images/test1.jxr' />
+                {/* {ie && <><img className="shipImage" src='images/test1.jxr' />
                 <img className="shipImage" src='images/test2.jxr' />
                 <img className="shipImage" src='images/test3.jxr' />
                 <img className="shipImage" src='images/test4.jxr' />
@@ -89,8 +101,8 @@ class App extends Component {
                 <img className="shipImage" src='images/test38.jxr' />
                 <img className="shipImage" src='images/test39.jxr' />
                 <img className="shipImage" src='images/test40.jxr' />
-                <img className="shipImage" src='images/test41.jxr' /></> }
-              {!ie && <><img className="shipImage" src='images/test1.webp' />
+                <img className="shipImage" src='images/test41.jxr' /></> } */}
+              {/* {!ie && <><img className="shipImage" src='images/test1.webp' />
                 <img className="shipImage" src='images/test2.webp' />
                 <img className="shipImage" src='images/test3.webp' />
                 <img className="shipImage" src='images/test4.webp' />
@@ -130,7 +142,7 @@ class App extends Component {
                 <img className="shipImage" src='images/test38.webp' />
                 <img className="shipImage" src='images/test39.webp' />
                 <img className="shipImage" src='images/test40.webp' />
-                <img className="shipImage" src='images/test41.webp' /></> }
+                <img className="shipImage" src='images/test41.webp' /></> } */}
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
