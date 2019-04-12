@@ -5,18 +5,25 @@ import {Image, Video, Transformation, CloudinaryContext} from 'cloudinary-react'
 
 class App extends Component {
   render() {
+    const responsiveImage = require('./img/1qa.jpg?placeholder=true&sizes[]=1000,sizes[]=1200,sizes[]=1300');
     const ie = /*@cc_on!@*/false || !!document.documentMode;
-    const style = {width: 'calc(33.33% - 137.33333px)', height: '100px', overflow: 'hidden'}
+    const style = {width: '50%', height: '100vh', overflow: 'hidden'}
     const style1 = {width: '100%', height: '100%', backgroundImage: "url(https://res.cloudinary.com/demo/image/upload/f_auto/seagull.jpg)", backgroundSize: "cover"}
-    const style2 = {width: '100%', height: '100%', backgroundImage: "url(img/1qa.svg)", backgroundSize: "cover"}
-    const style3 = {width: '100%', height: '100%'}
+    const style2 = {width: 'auto', height: '100%', backgroundImage: 'url("' + responsiveImage.placeholder + '")', backgroundSize: "cover"}
+    const style3 = {width: '100%', height: '100%', backgroundSize: "cover", backgroundImage: "url(https://res.cloudinary.com/dialqb1om/image/upload/v1554966439/f_auto,q_auto,c_crop/1qa.jpg)"}
+    const style4 = {width: '100%', height: '100%', backgroundImage: "url(img/1qa.jpg)", backgroundSize: "cover"}
+    const style5 = {width: '100%', height: '100%', backgroundImage: "url(images/1qa.webp)", backgroundSize: "cover"}
+    const style6 = {width: '100%', height: '100%', backgroundSize: "cover", backgroundImage: "url(https://res.cloudinary.com/dialqb1om/image/upload/v1554966439/q_auto/1qa.jpg)"}
     return (
       <div className="App">
         <header className="App-header">
         {/* <Image cloudName="dialqb1om" publicId="img/test1.jpg" crop="scale" /> */}
         {/* <img src="https://res.cloudinary.com/demo/image/upload/f_auto/seagull.jpg" /> */}
         <div style={style}>
-          <Image responsive dpr="auto" width="auto" crop="scale" cloudName="dialqb1om" publicId="1qa.jpg" style={style3} />
+          <div style={style5}></div>
+          {/* <Image responsive dpr="auto" width="auto" crop="scale" cloudName="dialqb1om" publicId="1qa.jpg" style={style3} >
+          <Transformation fetchFormat="auto" />
+          </Image> */}
         {/* <Image responsive angle="20" dpr="auto" width="auto" crop="scale" cloudName="dialqb1om" publicId="sample.jpg" style={style1} /> */}
         {/* <div style={style2} /> */}
         </div>
